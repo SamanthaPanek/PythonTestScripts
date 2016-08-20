@@ -14,3 +14,4 @@ def Bio():
   print "work."
   print ""
   
+print Bio()
