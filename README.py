@@ -14,6 +14,3 @@ def Bio():
   print "work."
   print ""
   
-# prints my bio to the console
-print Bio()
-
