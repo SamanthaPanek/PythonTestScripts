@@ -13,5 +13,6 @@ def Bio():
   print "This page stores some of the examples of my "
   print "work."
   print ""
-  
+
+# prints the function Bio to the console  
 Bio()
