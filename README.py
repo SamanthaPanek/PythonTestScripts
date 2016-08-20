@@ -1,7 +1,7 @@
 # PythonTestScripts
 # Bio
-
-print Bio()
+# Samantha Panek
+# August 19, 2016
 
 # creates a function that prints out my biography
 def Bio():
@@ -13,3 +13,7 @@ def Bio():
   print "This page stores some of the examples of my "
   print "work."
   print ""
+  
+# prints my bio to the console
+print Bio()
+
