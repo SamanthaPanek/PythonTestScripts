@@ -2,6 +2,7 @@
 # Creating a library that can be imported to run test cases
 # Samantha Panek
 # August 22, 2016
+#
 #------------------------------------------------------------------------------
 
 import pyautogui
