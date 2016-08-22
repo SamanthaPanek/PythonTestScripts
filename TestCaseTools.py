@@ -21,3 +21,8 @@ def imageDetection(computerUsername):
 def inputUsername():
     computerUsername= input("Enter your computer username as a string: ")
     return computerUsername
+
+
+
+
+

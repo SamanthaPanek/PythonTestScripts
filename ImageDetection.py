@@ -8,9 +8,7 @@
 # Capture.PNG located on your desktop
 # ------------------------------------------------------------
 
-
 import TestCaseTools
-
 
 # calls the inputUsername function to ask the user for their
 # computer username
@@ -18,3 +16,9 @@ inputComputerUsername= TestCaseTools.inputUsername()
 
 # runs the ImageDetection fuction for the computer username
 TestCaseTools.imageDetection(inputComputerUsername)
+
+
+
+
+
+
