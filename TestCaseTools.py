@@ -17,12 +17,13 @@ def imageDetection(imageLocation):
         print ("Pass. Image detected on screen.")
     return
 
-# asks the user for their computer user name to be called in other programs
+# asks the user for their computer username to be called in other programs
 def inputUsername():
     computerUsername= input("Enter your computer username as a string: ")
     return computerUsername
 
 # has the program wait until a specified image has shown up on the screen
+# before proceeding
 def whileChecker(imageLocation):
     state= False
     while (state == False):
