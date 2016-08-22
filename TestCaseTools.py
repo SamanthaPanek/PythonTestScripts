@@ -34,3 +34,8 @@ def whileChecker(imageTitle, computerUsername):
         else:
             state= True
             time.sleep(2)
+
+
+
+
+            
