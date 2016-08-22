@@ -6,6 +6,7 @@
 #------------------------------------------------------------------------------
 
 import pyautogui
+import sys
 
 # creates a function to be called checking whether an image is
 # present on the user's screen
@@ -44,6 +45,15 @@ def userCheck(checkStatement):
         pass
     return
 
+# checks whether a user ahs a mac or a pc
+def computerChecker():
+    if (sys.platform == "linux" or sys.platform == "linux2"):
+        return "Linux"
+    elif (sys.platform == "darwin"):
+        return "Mac"
+    elif (sys.platform == "win32"):
+        return "PC"
+    
 
 
 
