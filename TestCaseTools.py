@@ -6,7 +6,6 @@
 #------------------------------------------------------------------------------
 
 import pyautogui
-import os
 
 # creates a function to be called checking whether an image is
 # present on the user's screen
@@ -17,6 +16,7 @@ def imageDetection(computerUsername):
         print ("Failed. Image not detected on screen.")
     else:
         print ("Pass. Image detected on screen.")
+    return
 
 # asks the user for their computer user name to be called in other programs
 def inputUsername():
@@ -25,7 +25,7 @@ def inputUsername():
 
 # has the program wait until a specified image has shown up on the screen
 def whileChecker(imageTitle, computerUsername):
-    image= os.path.join("\Users", computerUsername, "Desktop", imageTitle)
+    image= "/Users/" + computerUsername + "/Desktop/" + imageTitle
     state= False
     while (state == False):
         coordinates= pyautogui.locateCenterOnScreen(image)
@@ -34,6 +34,16 @@ def whileChecker(imageTitle, computerUsername):
         else:
             state= True
             time.sleep(2)
+    return
+
+# asks the user to check something (enter a requirement as checkStatement)
+# on the current screen and press enter
+def userCheck(checkStatement):
+    try:
+        input(checkStatement + " [Continue: Enter]")
+    except SyntaxError:
+        pass
+    return
 
 
 
