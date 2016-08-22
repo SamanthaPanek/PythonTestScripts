@@ -9,9 +9,8 @@ import pyautogui
 
 # creates a function to be called checking whether an image is
 # present on the user's screen
-def imageDetection(computerUsername):
-    image= "/Users/" + computerUsername + "/Desktop/Capture.PNG"
-    coordinates= pyautogui.locateCenterOnScreen(image)
+def imageDetection(imageLocation):
+    coordinates= pyautogui.locateCenterOnScreen(imageLocation)
     if (coordinates is None):
         print ("Failed. Image not detected on screen.")
     else:
@@ -24,11 +23,10 @@ def inputUsername():
     return computerUsername
 
 # has the program wait until a specified image has shown up on the screen
-def whileChecker(imageTitle, computerUsername):
-    image= "/Users/" + computerUsername + "/Desktop/" + imageTitle
+def whileChecker(imageLocation):
     state= False
     while (state == False):
-        coordinates= pyautogui.locateCenterOnScreen(image)
+        coordinates= pyautogui.locateCenterOnScreen(imageLocation)
         if (coordinates is None):
             time.sleep(2)
         else:
@@ -44,6 +42,8 @@ def userCheck(checkStatement):
     except SyntaxError:
         pass
     return
+
+
 
 
 
