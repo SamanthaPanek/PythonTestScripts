@@ -7,6 +7,8 @@
 
 import pyautogui
 import sys
+import os
+import pwd
 
 # creates a function to be called checking whether an image is
 # present on the user's screen
@@ -19,9 +21,8 @@ def imageDetection(imageLocation):
     return
 
 # asks the user for their computer username to be called in other programs
-def inputUsername():
-    computerUsername= input("Enter your computer username as a string: ")
-    return computerUsername
+def get_Username():
+    return pwd.getpwuid(os.getuid())[ 0 ]
 
 # has the program wait until a specified image has shown up on the screen
 # before proceeding
@@ -53,6 +54,10 @@ def computerChecker():
         return "Mac"
     elif (sys.platform == "win32"):
         return "PC"
+
+
+
+    
     
 
 
