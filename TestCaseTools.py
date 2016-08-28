@@ -20,7 +20,7 @@ def imageDetection(imageLocation):
         print ("Pass. Image detected on screen.")
     return
 
-# asks the user for their computer username to be called in other programs
+# gets the users computer username to be called in other programs
 def get_Username():
     return pwd.getpwuid(os.getuid())[ 0 ]
 
