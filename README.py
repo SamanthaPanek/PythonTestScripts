@@ -1,7 +1,7 @@
 # PythonTestScripts
 # Bio
 # Samantha Panek
-# August 19, 2016
+# May 8, 2016
 
 # creates a function that prints out my biography
 def Bio():
